@@ -58,7 +58,8 @@ WORKDIR /build
 COPY --from=scan /build .
 COPY --from=scan /build/target/surefire-reports /buildoutput/testoutput
 COPY --from=scan /build/target/jacoco-aggregate /buildoutput/jacoco
-COPY --from=scan /build/target/*.exec /buildoutput/jacoco/
+# COPY --from=scan /build/target/*.exec /buildoutput/jacoco/
+RUN if [ -f /build/target/*.exec ] 2>/dev/null; then cp /build/target/*.exec /buildoutput/jacoco/ || true; fi
 ARG MAVEN_OPTS
 ENV MAVEN_OPTS=$MAVEN_OPTS
 ARG PUBLISH
