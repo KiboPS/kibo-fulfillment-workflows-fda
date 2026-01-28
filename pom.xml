@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.kibocommerce.bpm</groupId>
-  <artifactId>kibo-fulfillment-workflows</artifactId>
+  <artifactId>kibo-fulfillment-workflows-fda</artifactId>
   <version>1.2604.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>kibo-fulfillment-workflows</name>
+  <name>kibo-fulfillment-workflows-fda</name>
   <description></description>
-
+  
   <organization>
     <name>Kibo Software</name>
     <url>http://www.kibocommerce.com</url>
